@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position property</title>
+
+    <style>
+        box{
+            border: 2px solid black;
+            color: blue;
+            background-color: red;
+            margin: auto;
+            width: 89vw;
+            height: 89vh;
+            /* inline-size: 200px; */
+        }
+        .box1{
+            /* position: relative;  */
+            top: 20px;
+            left: 20px;
+            background-color: rgb(255, 0, 0);
+            width: 100%;
+            height: 100px;
+        }
+        .box2{
+            /* position: absolute; */
+            
+            top: 20px;
+            left: 20px;
+            background-color: rgb(0, 255, 0);
+            width: 100%;
+            height: 100px;
+        }
+        .box3{
+            /* position: fixed; */
+            /* clip: auto; */
+            /* clip-path: circle(50% at 50% 50%); */
+            top: 20px;
+            left: 20px;
+            background-color: rgb(0, 0, 255);
+            width: 100%;
+            height: 100px;
+        }
+        .box4{
+            /* position: sticky; */
+            /* z-index: 100; */
+           
+            top: 20px;
+            left: 20px;
+            background-color: rgb(255, 255, 0);
+            width: 100%;
+            height: 100px;
+        }
+        .parent{
+            position: relative;
+            border: 2px solid black;
+            /* display: flex; */ 
+            /* justify-content: space-around; */
+            /* align-items: center; */
+            height: 1000000000000000000000000000vh;
+        }
+    </style>
+</head>
+<body>
+    <div class ="parent">
+        <div class ="box box1">1</div>
+        <div class ="box box2">2</div>
+        <div class ="box box3">3</div>
+        <div class ="box box4">4</div>
+    </div>
+</body>
+</html>
+
+
+<!-- postion in css -->
+
+<!-- 1. relative: it is used for the relative to the normal position of the element
+2. absolute: it is used for the absolute to the relative position of the element
+3. fixed: it is used for the fixed to the view port of the element
+4. sticky: it is used for the sticky to the view port of the element
+5. static: it is used for the static to the view port of the element
+6. inherit: it is used for the inherit to the view port of the element
+7. initial: it is used for the initial to the view port of the element
+8. unset: it is used for the unset to the view port of the element
+9. z-index: it is used for the z-index to the view port of the element
+10. top: it is used for the top to the view port of the element
+11. right: it is used for the right to the view port of the element
+12. bottom: it is used for the bottom to the view port of the element
+13. left: it is used for the left to the view port of the element
+14. clip: it is used for the clip to the view port of the element
+15. clip-path: it is used for the clip-path to the view port of the element
+16. clip-rule: it is used for the clip-rule to the view port of the element
+17. position: it is used for the position to the view port of the element
+18. overflow: it is used for the overflow to the view port of the element
+19. overflow-x: it is used for the overflow-x to the view port of the element
+20. overflow-y: it is used for the overflow-y to the view port of the element
+21. overflow-wrap: it is used for the overflow-wrap to the view port of the element
+22. overflow-anchor: it is used for the overflow-anchor to the view port of the element -->

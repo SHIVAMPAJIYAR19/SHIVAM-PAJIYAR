@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css sizing units</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+             }
+
+        .box{
+            /* border-sizing: border-box; */
+            border:2px solid black;
+            color:blue;
+            background-color: red; 
+            margin: auto;
+            /* width:2049px; */
+            width:89vw;
+            height: 89vh
+            /* inline-size: 200px; */
+
+        }
+        .cointener{
+            /* border-sizing: border-box; */
+            border:2px solid black;
+            color:blue;
+            background-color: rgb(255, 0, 115); 
+            margin: 23px auto;
+            /* width:2049px; */
+            width:89vw;/*this is used for view port width*/
+            height: 89vh;/*this is used for view port height*/
+            /* inline-size: 200px; */
+            font-size: 20px;
+
+        }
+        .cointainer p{
+            font-size: 2em;/*this 2em is multiply of 20px=40px*/
+            width:89%;
+        }
+         
+        /* .cointainer p{
+            font-size: 2rem;/*this 2em is root multiply of 20px=40px*/
+        
+
+
+        .cont{
+            color: rgb(81, 18, 116);
+            background-color: rgb(0, 255, 0);
+            margin: 49px auto;
+            /* here vm and vh are same */
+            width:100vmin;
+            box-sizing: border-box;
+            border:9px solid black;
+            width:89vw;/*this is used for view port width*/
+            height: 89vmin;
+           
+         
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        this is a box
+    </div>
+    <div class="cointener">
+        thi is a container
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Nulla perspiciatis debitis placeat, provident, 
+         quidem reiciendis aspernatur unde voluptates quas ullam 
+         voluptate tempora. Saepe optio eligendi eius
+          repudiandae pariatur blanditiis nesciunt.
+        </p>
+    </div>
+
+    <div class="cont">
+        this is anothetr class
+    </div>
+</body>
+</html>
+
+
+<!-- 
+    1. px this is used for pixel
+    2. em this is used for multiply of font size
+    3. rem this is used for root multiply of font size
+    4. vw this is used for view port width
+    5. vh this is used for view port height
+    6. vmin this is used for minimum of view port
+    7. vmax this is used for maximum of view port
+    8. % this is used for percentage
+     -->

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector in css</title>
+    <!-- selectors -->
+     <style>
+        /* class selctors */
+    .red{
+        background-color: red;
+    }
+    /* id selectors */
+    #green
+    {
+        background-color: green;
+    }
+/* children */
+div>h1{
+    color: white;
+    background-color: black;
+}
+/* desedent */
+div h1{
+    color: white;
+    background-color: rgb(92, 33, 33);
+}
+
+/* universal selector */
+*{
+    margin: 1000000000;
+    padding: 100000000;
+    box-sizing: border-box;
+}
+
+/* pseudo selectors */
+a:visited{
+    color: red;
+}
+a:link{
+    color: rgb(0, 81, 255);
+}
+
+a:active{
+    color: yellow;
+}
+a:hover{
+    color: green;
+} 
+
+ /* this not used normally */
+p:first-child{
+    color: red;
+}
+</style>
+ 
+   
+
+</head>
+<body>
+    <main class="one">
+        <p>this first child</p>
+        <p>this second child</p>
+    </main>
+    <div class="red">
+        i am clas
+        <h1 >this is class</h1>
+    </div>
+
+    <div id="green">
+        i am id
+        <h1>this is id</h1>
+
+        </div>
+    <span>
+        <a href="https://www.google.com">google</a>
+        <a href="https://www.facebook.com">facebook</a>
+    </span>
+</body>
+</html>

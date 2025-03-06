@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css grid</title>
+    <style>
+      .container {
+        background-color: aquamarine;
+         width: 88vw;
+        height: 120vh; 
+        border: 2px solid rgb(119, 23, 141);
+        display: grid;
+
+
+        
+       
+  /* grid-template-columns: 1fr 9fr 1fr; /*fr can used in give the space between next column */
+ /* grid-template-columns: repeat(4, minmax(100px, 1fr)); */
+  grid-template-columns: repeat(4, 80px);
+            grid-template-rows: repeat(2, 89px);
+
+
+        
+        /* gap:20px; */
+        /* column-gap: 10px;*/
+        /* row-gap: 20px; */
+        /* justify-items: center; */
+        /* align-items: center;  */
+        /* align-content: center;  */
+        /* place-content: center; */
+      /* align-content: start; */
+     /* align-content: end;  */
+    }
+
+      .item {
+        background-color: rgb(164, 127, 158);
+        border: 2px solid rgb(6, 5, 7);
+        height: 48px;
+        width: 48px;
+      }
+      .item1 {
+       
+      }
+      .item8 {
+       
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item1">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item item8">8</div>
+      <!-- <div class="item">9</div> -->
+    </div>
+  </body>
+</html>

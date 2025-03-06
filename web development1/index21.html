@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>specificity</title>
+    '
+    <style>
+      /* the specificity of selector is 1 */
+      h {
+        color: blueviolet;
+      }
+      /* the specificity of selector is 10 */
+      .hero {
+        color: red;
+      }
+      /* the specificity of selector is 10 */
+      .game {
+        /*h.game it can give high specificity*/
+        color: blue;
+      }
+      /* the specificity of selector is 10 */
+      .loyal {
+        color: green; /*!important can give to acces 
+            which color you want*/
+      }
+
+      /* this is an example of attribute  . the specificity of selector is 10 */
+      [data-a="x"] {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- <h class = "hero game loyal">
+            this is hero world.
+        </h> -->
+
+      <!-- <h  style="color:blue"  class = "hero game loyal">
+            this is hero world.
+        </h> -->
+      <h class="hero game loyal" data-a="x"> this is hero world. </h>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css float and clear</title>
+    <style>
+      .cards {
+        border: 2px solid black;
+        display:flow-root;
+      }
+      img {
+        float: right;
+      }
+      .card1{
+        border: 2px solid black;
+      }
+      .card1:nth-child(3){
+        background-color: aqua;
+        /* clear:right;
+        clear:left; */
+        clear:both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cards">
+      <img
+        class="img"
+        src="https://th.bing.com/th/id/OIP.naJoMD20fzC9zf-tBAPjNQHaE8?w=1024&h=683&rs=1&pid=ImgDetMain"
+        alt=""
+        width="299"/>
+
+      <div class="card1">
+       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+        voluptatem eum est assumenda rerum incidunt optio enim corporis illo
+        voluptatibus cumque voluptate official.
+    </p>
+      </div>
+      <div class="card1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore
+        provident rerum, modi repudiandae nam in deleniti dolorum quo? Officiis,
+        accusamus perferendis? Ipsam ex, enim obcaecati blanditiis debitis
+        fugiat dolores inventore aut maxime officiis quidem totam! Corrupti at
+        est magnam enim omnis minima asperiores beatae laboriosam. Consectetur,
+        nulla cupiditate! Natus enim ea voluptas eveniet sed odio, at totam fuga
+        perferendis impedit! Ab similique nostrum magni voluptas recusandae vel
+        quae laboriosam adipisci sint. Consequatur impedit dolorem molestias
+        incidunt magnam exercitationem ratione nobis dolorum magni voluptate!
+        Sed minus laudantium amet aspernatur veritatis nihil praesentium impedit
+        quos dolores, temporibus dignissimos, voluptate ipsa pariatur voluptatem
+        non voluptatum est suscipit distinctio doloribus maxime! Repudiandae
+        alias modi quis nemo accusantium, eveniet sit, deleniti odit a cum
+        reiciendis similique dicta provident quos sapiente accusamus.
+        Necessitatibus, minus adipisci totam dignissimos laborum, voluptatibus
+        aperiam nemo fugit ullam praesentium impedit eligendi cum exercitationem
+        architecto enim dolor doloremque explicabo, quam beatae numquam ex
+        corrupti! Animi nostrum, maiores fugit blanditiis id nihil nisi sunt
+        exercitationem impedit laborum odio voluptas at praesentium suscipit
+        velit perferendis iusto, vitae molestias, illo natus. Soluta illum
+        reiciendis omnis quos, sed, voluptate accusamus tenetur itaque veniam
+        natus rerum nam ad, et optio atque. Iure doloribus obcaecati non maxime,
+        doloremque magni ipsam voluptates, est, iste at adipisci asperiores
+        velit minima tempora ratione cumque. Nulla sed recusandae corporis,
+        deleniti neque possimus ad consequatur! Veritatis nihil iste rem
+        distinctio corporis praesentium laborum voluptatum, mollitia earum
+        impedit beatae quae, tenetur exercitationem dolorem ipsum delectus.
+      </div>
+      <div class="card1">card3</div>
+    </div>
+  </body>
+</html>
+
+<!-- clear can used in text for image in both side (left,right) -->
+ <!-- float it can used for image float in the text -->
+ 

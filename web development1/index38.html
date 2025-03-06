@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css flexbox</title>
+    <style>
+      .container {
+        height:199vh;
+        border: 2px solid black;
+        color: rgb(133, 99, 55);
+        
+        display: flex;
+        /* /* justify-content: center; */
+        align-items: center; 
+        /* flex-direction :column; it is used to give the direction in in vertical; */
+        /* flex-direction :column-reverse;  */
+        /* flex-wrap: wrap; */
+        /* align-content: flex-start; */
+        /* there is no justify-items  in flexbox; */
+
+        flex-flow: row wrap;
+        /* gap:40px; */
+        /* row-gap: 90px; */
+        /* column-gap:88px; */
+        /* gap:88px 99px; */
+
+        .order-1 {
+          order: 1;
+        }
+        .order-2 {
+          order: 2;
+        }
+        .order-3 {
+          order: 3;
+        }
+
+
+         .item1{  
+            /* flex-grow: 9; */
+            /* flex: shrink 98; */
+            /* align-self: flex-start; */
+            align-self: flex-end;
+    }
+      }
+
+      .item{
+        /* flex-grow:1; */
+        border: 2px black solid;
+        /* margin: 9px; */
+        padding: 9px;
+        width: 77px;
+        height: 77px;
+        background-color: rgb(175, 215, 215);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item1">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">77</div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item">99</div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+  </body>
+</html>

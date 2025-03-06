@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+    <script>
+        function calculate() {
+            // Get the values entered by the user
+            let num1 = parseFloat(prompt("Enter the first number:"));
+            let num2 = parseFloat(prompt("Enter the second number:"));
+
+            // Perform the calculations
+            let sum = num1 + num2;
+            let difference = num1 - num2;
+            let product = num1 * num2;
+            let quotient = num1 / num2;
+
+            // Display the results
+            document.getElementById("results").innerHTML = `
+                <p>Sum: ${sum}</p>
+                <p>Difference: ${difference}</p>
+                <p>Product: ${product}</p>
+                <p>Quotient: ${quotient}</p>
+            `;
+        }
+    </script>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <button onclick="calculate()">Calculate</button>
+    <div id="results"></div>
+</body>
+</html>

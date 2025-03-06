@@ -1,0 +1,139 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css variable</title>
+    <style>
+      :root {
+        /* --main-color: red;
+        --main-bg-color: yellow; */
+        --color:rgb(255, 0, 115);
+        --seccolor:rgb(0, 255, 0);
+        --defpadding: 10px;
+        --defopacity: 0.9;
+      }
+      
+
+      *{
+            margin: 0;
+            padding: 0;
+      }
+        .nav {
+            background-color: fuchsia;
+            color: greenyellow;
+            padding: 10px;
+        }
+
+        ul {
+          display: flex;
+            list-style-type:none;
+        }
+        ul li{
+            opacity: 0.9; 
+            display: inline;
+            margin: 10px;
+            border: 2px solid black;
+        }
+        li :first-child{
+            color: blue;
+        }
+        h1{
+            color: rgb(152, 188, 251);
+            background-color: rosybrown;
+            padding: 10px;
+        }
+    
+
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div>
+      <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+        recusandae voluptatum impedit labore quis quidem adipisci. Quae nemo
+        sapiente tempore, deserunt, temporibus error eligendi excepturi
+        assumenda molestiae facere necessitatibus et.
+      </h1>
+    </div>
+  </body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variables</title>
+    <style>
+
+        :root{
+            --color: rgb(255, 0, 247);
+            --seccolor: rgb(231, 164, 246); 
+            --defpad: 23px;
+            --defop: 0.4;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       .nav{
+            background-color: var(--color);
+        }
+
+        ul{
+            display: flex;
+        }
+
+        ul li{
+            opacity: var(--defop);
+            list-style: none;
+            padding: var(--defpad);
+            border: 2px solid var(--seccolor);
+        }
+
+        ul li:first-child{
+            --color: rgb(243, 87, 8);
+            background-color: var(--color, blue);
+        }
+
+        .container{
+            background-color: var(--seccolor);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About </li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    
+
+    <div class="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse assumenda qui ad dolorem consequuntur facilis aliquam. Unde sapiente ipsam quaerat, at debitis nesciunt, totam nulla quae ad ipsum veniam sed eligendi rem deserunt quos maiores modi. Illo eaque expedita natus iusto nostrum dolorem quos est.
+    </div>
+</body>
+</html>

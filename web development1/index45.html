@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css transtion property</title>
+    <style>
+
+.container{
+background-color: aqua;
+width:77vw;
+height:88vh;
+}
+.box{
+background-color: aquamarine;
+width:7vw;
+height:8vh;
+
+/* this all comment  funtion are used in transiton of box in letter */
+/* transition-property: background-color , transform;
+transition-duration:9s;
+transition-timing-function: ease-in-out;
+transition-delay: 1s; */
+transition:all 9s ease-in-out 1s;/*this also has used as same before used fuction*/
+ 
+
+
+}
+
+.translate{
+transform: translateX(10vw) translateY(10vh);
+background-color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    
+            <div class="container">
+
+                <div class="box translate">box</div>
+
+            </div>
+    
+</body>
+</html>

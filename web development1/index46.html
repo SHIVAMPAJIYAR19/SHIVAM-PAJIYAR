@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css animation</title>
+<style>
+
+.container{
+background-color: aqua;
+height:88vh;
+width:78vw;
+}
+.box{
+    height:88px;
+    width:78px;
+    background-color: rgb(131, 198, 198);
+
+/* 
+    animation: gamechanger;
+    animation-duration: 9s;
+    animation-iteration-count: 9;
+    animation-timing-function: ease-out;
+    animation-delay: 9s;
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate; */
+    
+    /* animation-play-state: running;  */
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation:gamechanger 9s ease-in-out 1s forwards; */
+    animation:gamechanger 9s ease-in-out 1s backwards,
+              gamechanger2 9s ease-in-out 1s forwards;
+}
+
+
+@keyframes gamechanger {
+    from{
+background-color: brown;
+    }
+    
+    to{
+transform:translate(1000px);
+background-color: blueviolet;
+    }
+}
+
+
+
+@keyframes gamechanger2 {
+    0%{
+        transform: rotate(100deg);
+    }
+    20%{
+        transform: rotate(200deg);
+    }
+    30%{
+        transform: rotate(300deg);
+    }
+    40%{
+        transform: rotate(400deg);
+    }
+    50%{
+        transform: rotate(500deg);
+    }
+    60%{
+        transform: rotate(600deg);
+    }
+    70%{
+        transform: rotate(100deg);
+    }
+    80%{
+        transform: rotate(700deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+               box
+        </div>
+    </div>
+    
+</body>
+</html>

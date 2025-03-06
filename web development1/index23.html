@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css display property</title>
+
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display  , many dispaly style you can
+  use and learn -->
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .bom {
+        border: 2px solid black;
+        /* display: inline;*/ /*this is used for display the
+          element in inline, we cannot use the padding and margin
+           of the top of the pixel*/
+        display: inline-block; /*this is used for display the inline
+            block element,
+            showing padding and margin*/
+
+        /* display: flex; this is used for display the element in flex 
+        /* justify-content:center; /*this is used for center the  
+        element in the center it can you use in insepect*/
+        color: red;
+        margin: 49px;
+        padding: 49px;
+        width: 100px;
+        height: "100px";
+      }
+      .bom1 {
+        border: 2px solid black;
+        /* display: none;this is used for hide the element */
+        /* visibility: hidden;*/ /*this is used for hide the element and give 
+            the space of that element*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bom bom1">hell everybody</div>
+    <div>this is another bod</div>
+
+    <span> i am a good boy </span>
+  </body>
+</html>
